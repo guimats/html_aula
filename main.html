@@ -8,32 +8,67 @@
     </head>
     <body>
         <div class="center">
-            <h1>Atividade HTML - Guilherme Silva</h1>
-            <div class="perfil">
-                <img src="https://img.freepik.com/vetores-premium/o-rapaz-do-vetor-esta-deitado-com-um-portatil_995281-4566.jpg" style="width: 200px;">
-                <div>
-                    <p>Aluno do curso de ADS e atualmente atuando como QA Tester / Backend Developer .NET</p>
-                    <p>Focando os meus estudos em desenvolvimento back-end com .NET e SQL Server</p>
-                </div>
-            </div>
-            <div class="lista">
-                <div>
-                    <h2>Hobbies:</h2>
-                    <ul>
-                        <li>Jogar no PC</li>
-                        <li>Escutar música</li>
-                        <li>Fazer academia</li>
-                        <li>Jogar basquete</li>
-                        <li>Ler livros</li>
-                        <li>Assistir séries</li>
+            <header>
+                <h1>Atividade Web</h1>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#integrantes">Integrantes</a></li>
+                        <li><a href="#tarefas">Atividades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#footer">Rodapé</a></li>
                     </ul>
+                </nav>
+            </header>
+            <div class="perfil" id="integrantes">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHFL-FMilfXTQ/profile-displayphoto-shrink_800_800/B4DZbEnmB2GwAc-/0/1747055436296?e=1758153600&v=beta&t=65o9h2Ov4ln--990RyWONDZqq6IrZyYaT9uC1tNU9hw">
+                <div>
+                    <h2>Guilherme - Developer</h2>
+                    <p>
+                        Aluno do curso de ADS e atualmente atuando como QA Tester / Backend Developer .NET. Focando os meus estudos em desenvolvimento back-end com .NET e SQL Server
+                    </p>
                 </div>
-                <img src="https://img.freepik.com/vetores-gratis/homem-bonito-jogando-o-jogo-na-ilustracao-do-icone-do-vetor-dos-desenhos-animados-do-computador-icone-de-tecnologia-de-pessoas-isolado_138676-5731.jpg" style="width: 200px;">
             </div>
             <div class="redes">
                 <a href="https://www.linkedin.com/in/guilherme-mateus-silva00/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" style="width: 50px;"></a>
                 <a href="https://github.com/guimats" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="width: 40px;"></a>
             </div>
+            <div id="tarefas">
+                <table>
+                    <title>Integrantes do Grupo</title>
+                    <thead>
+                        <tr>
+                            <th colspan="3" class="main-header">Integrantes do Grupo</th>
+                        </tr>
+                        <tr>
+                            <th>Nome</th>
+                            <th>RU</th>
+                            <th>Tarefa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Guilherme Silva</td>
+                            <td>5399123</td>
+                            <td>Todas as atividades e projetos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="sobre">
+                <div>
+                    <h2>Sobre o projeto</h2>
+                    <p>
+                        Projeto criado para a matéria de Fundamentos de Desenvolvimento de Software, utilizando HTML, CSS e JavaScript para a criação de um site interativo.
+                    </p>
+                </div>
+                <img src="https://img.freepik.com/vetores-gratis/homem-bonito-jogando-o-jogo-na-ilustracao-do-icone-do-vetor-dos-desenhos-animados-do-computador-icone-de-tecnologia-de-pessoas-isolado_138676-5731.jpg" style="width: 200px;">
+            </div>
         </div>
+        <footer>
+            <div>
+                <p>Desenvolvido por <a href="https://github.com/guimats">Guilherme</a></p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
     </body>
     </html>

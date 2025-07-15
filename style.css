@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+p {
+    text-align: justify;
+}
+
 h1 {
-    margin-top: 50px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 h1:hover {
@@ -17,31 +22,48 @@ body{
    transition: background-color 0.5s;
 }
 
-body:has(.lista:hover) {
-    background-color: #8C99AD;
-}
-
-body:has(.perfil:hover) {
-    background-color: #C9B495;
-}
-
 .center {
     display: flex;
     flex-flow: column;
     align-items: center;
     margin: 30px auto 0;
     max-width: max-content;
-    padding: 10px 40px 40px;
+    padding: 10px 80px 40px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 4px 2px 3px rgba(0,0,0,0.2);
 }
 
+.menu {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 500px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.menu li:hover a{
+    background-color: #EFECE7;
+}
+
+#integrantes {
+    display: flex;
+    align-items: center;
+}
+
 .perfil {
     display: flex;
     gap: 30px;
-    width: 450px;
-    margin-top: 20px;
+    width: 500px;
+    margin: 50px 0;
     transition: scale 0.3s;
 }
 
@@ -62,32 +84,36 @@ body:has(.perfil:hover) {
     gap: 10px
 }
 
-.lista {
-    margin-top: 20px;
+#sobre {
+    margin-top: 50px;
     display: flex;
     gap: 30px;
     transition: scale 0.3s;
 }
 
-.lista:hover {
+#sobre:hover {
     scale: 1.1;
 }
 
-.lista img {
+#sobre img {
     height: 170px;
     box-shadow: 4px 2px 3px rgba(0,0,0,0.2);
 }
 
-.lista ul {
-    list-style: none;
+#sobre div {
+    width: 250px;
 }
 
-.lista ul li {
+#sobre ul li {
     margin-top: 5px;
 }
 
+#sobre h2 {
+    margin-bottom: 10px;
+}
+
 .redes {
-    margin-top: 30px;
+    margin: -40px 0 50px;
 }
 
 .redes {
@@ -101,4 +127,49 @@ body:has(.perfil:hover) {
 
 .redes img:hover {
     scale: 1.2;
+}
+
+footer {
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    background-color: #ac8e62;
+    padding: 3px 5px;
+    border-radius: 10px;
+    color: antiquewhite;
+    transition: background-color 0.5s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.main-header {
+    background-color: #ac8e62;
+    color: #EFECE7;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+table thead tr:nth-child(2) th {
+    background-color: #EFECE7;
+    color: #ac8e62;
+    font-weight: bold;
+    text-align: center;
 }
